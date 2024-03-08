@@ -1,0 +1,42 @@
+.navbar {
+}
+
+.navbar a {
+  font-size: 14px;
+  color: #969696;
+  text-decoration: none;
+  transition: color 0.3s ease;
+  line-height: 300%;
+}
+.navbar a:hover {
+  color: #FFA500;
+}
+.navbar a.current_page {
+  color: #FFA500;
+}
+.navbar i {  
+  margin: 0 15px 0 0;
+}
+
+.nav_name {
+  color: #f0f0f0;
+  font-size: 24px;
+  margin-bottom: 0;
+}
+.nav_title {
+  color: #9b9b9b;
+  font-size: 12px;
+  line-height: 140%;
+  padding: 0;
+  margin: 20px 0;
+  list-style: none;
+}
+.nav_divider {
+  width: 70%;
+  background-color: #5e5e5e;
+  height: 1px;
+  flex-grow: 1;
+}
+.nav_page {
+  margin: 20px 0;
+}
