@@ -18,7 +18,7 @@ const Navbar = () => {
 		</ul>
 		<div className="nav_divider"/>
 		<div className="nav_page">
-			<Link to="/about" className={isActive('/about')}>ABOUT</Link><br/>
+			<Link to="/about" className={isActive('/about')||isActive('/')}>ABOUT</Link><br/>
 			<Link to="/personal_pro" className={isActive('/personal_pro')}>PERSONAL PROJECTS</Link><br/>
 			<Link to="/tech_stack" className={isActive('/tech_stack')}>TECH STACK</Link><br/>			
 		</div>
