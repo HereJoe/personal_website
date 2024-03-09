@@ -1,10 +1,8 @@
-import React,{useContext} from 'react';
-import { MyContext } from '../App';
+import { Link } from 'react-router-dom';
 import '../styles/About.css';
 import ArrowIcon from './ArrowIcon';
 
 const About = () => {
-  const { updateParams } = useContext(MyContext);
   return (
     <div className="about">
 	  <div className="about_para">
@@ -14,13 +12,6 @@ const About = () => {
 	  <div className="about_para">
 	    <p className="about_title">Experience & Education</p>
 		<div className="about_content">
-		{/*
-			<ul>
-				<li>July  2022 - Jun 2024 | The University of Adelaide | Master of Computing And Innovation</li>
-				<li> Aug 2019 - Jun 2022 | Ping An | Senior Software Engineer</li>
-				<li> Jan 2018 - Aug 2029 | SF express | Java Software Engineer</li>
-				<li> Oct 2014 - Jan 2018 | ZhongChengPinYe | Full Stack Software Developer</li>
-		</ul>*/}
 			<ul>
 			  <li>
 				<span className ="date">July 2022 - Jun 2024</span>
@@ -49,9 +40,9 @@ const About = () => {
 	  <div className="about_para">
 	    <p className="about_title">Personal Projects</p>
 		<div className="about_content">
-			<a onClick={(event)=>{event.preventDefault();updateParams({currentPage:"personal_pro"})}}>
-				Mini Games · Tank Online · Material Trans · A+STORE. [Click for more details]			
-			</a>
+			<Link to="/personal_pro">
+				Mini Games · Tank Online · Material Trans · A+STORE. [Click for more details]
+			</Link>
 			<div className="about_content_inline">
 				<ArrowIcon/>
 			</div>
@@ -60,9 +51,9 @@ const About = () => {
 	  <div className="about_para">
 	    <p className="about_title">Tech Stack</p>
 		<div className="about_content">
-			<a onClick={(event)=>{event.preventDefault();updateParams({currentPage:"tech_stack"})}}>
+			<Link to="/tech_stack">
 				Java · Python · C · C++ · Full-stack · AI · MiningBigData. [Click for more details]			
-			</a>
+			</Link>
 			<div className="about_content_inline">
 				<ArrowIcon/>
 			</div>

@@ -1,4 +1,6 @@
 import React, { createContext, useState } from 'react';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+
 import './styles/App.css';
 import Navbar from './components/Navbar';
 import About from './components/About';
@@ -26,17 +28,22 @@ function App() {
   console.log(contextState.currentPage);
   return (
 	<MyContext.Provider value={contextValue}>
+		<Router>
 		<div className="App">
 			<div className="App_left">
 				<Navbar/>
 				<Footer/>
 			</div>
 			<div className="App_right">
-				{contextState.currentPage === 'about' && <About />}
-				{contextState.currentPage === 'personal_pro' && <PersonalPro />}
-				{contextState.currentPage === 'tech_stack' && <TechStack />}
+				<Routes>
+					<Route path="/"  element={<About />} />
+					<Route path="/about"  element={<About />} />
+					<Route path="/personal_pro"  element={<PersonalPro />} />
+					<Route path="/tech_stack"  element={<TechStack />} />
+				</Routes>
 			</div>		  
 		</div>
+		</Router>
     </MyContext.Provider>
   );
 }

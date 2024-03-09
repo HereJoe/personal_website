@@ -20,7 +20,6 @@ const PersonalPro = () => {
     }, 1000);
   };
   
-   console.log("personal_pro....");
   return (
     <div className="pro">
 	  <div className="pro_para">

@@ -1,9 +1,12 @@
-import React, { useContext } from 'react';
-import { MyContext } from '../App';
+import { Link, useLocation } from 'react-router-dom';
 import '../styles/Navbar.css';
 
 const Navbar = () => {
-  const { state, updateParams } = useContext(MyContext);
+  const location = useLocation();
+  const isActive = (pathname) => {
+    return location.pathname === pathname ? 'current_page' : '';
+  };
+
   return (
     <div className="navbar">
 		<p className="nav_name">Zhuo (Joe) Yang</p>
@@ -15,9 +18,9 @@ const Navbar = () => {
 		</ul>
 		<div className="nav_divider"/>
 		<div className="nav_page">
-			<a href="#" onClick={(event)=>{event.preventDefault();updateParams({currentPage:"about"})}} className={state.currentPage==='about'?"current_page":""}>ABOUT</a><br/>
-			<a href="#" onClick={(event)=>{event.preventDefault();updateParams({currentPage:"personal_pro"})}} className={state.currentPage=='personal_pro'?"current_page":""}>PERSONAL PROJECTS</a><br/>
-			<a href="#" onClick={(event)=>{event.preventDefault();updateParams({currentPage:"tech_stack"})}} className={state.currentPage=='tech_stack'?"current_page":""}>TECH STACK</a><br/>
+			<Link to="/about" className={isActive('/about')}>ABOUT</Link><br/>
+			<Link to="/personal_pro" className={isActive('/personal_pro')}>PERSONAL PROJECTS</Link><br/>
+			<Link to="/tech_stack" className={isActive('/tech_stack')}>TECH STACK</Link><br/>			
 		</div>
 		<div className="nav_divider"/>
 		<div>
