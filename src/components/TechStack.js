@@ -11,7 +11,7 @@ const TechStack = () => {
 		</div>
 	  </div>
 	  <div className="tech_para">
-		<p className="tech_title">Operating Systems and Containers</p>
+		<p className="tech_title">Operating Systems & Containers</p>
 		<div className="tech_content">		
 			<ul>
 			  <li>Linux · Docker · Alibaba Cloud (similar to AWS)</li>			  
@@ -19,12 +19,12 @@ const TechStack = () => {
 		</div>
 	  </div>
 	  <div className="tech_para">
-		<p className="tech_title">Frameworks and Technologies</p>
+		<p className="tech_title">Back-end Frameworks & Technologies</p>
 		<div className="tech_content">		
 			<ul>
 			  <li><span className ="subtitle">MainFrame:</span><span>Sprng MVC · Spring Boot · Spring Cloud · Dubbo</span></li>
-			  <li><span className ="subtitle">Databases:</span><span>Redis · MySQL · PostgreSQL · Oracle · Mybatis · MycatData</span></li>
-			  <li><span className ="subtitle">Processing:</span><span>ELKJVM/GC Tuning</span></li>
+			  <li><span className ="subtitle">Databases:</span><span>Redis · MySQL · PostgreSQL · Oracle · Mybatis · Mycat</span></li>
+			  <li><span className ="subtitle">Data Processing:</span><span>ELK</span></li>
 			  <li><span className ="subtitle">BPM:</span><span>Activiti · Self-development</span></li>
 			  <li><span className ="subtitle">Proxy&Network:</span><span>Nginx · HAProxy · LVS · F5 · Netty</span></li>
 			  <li><span className ="subtitle">Middleware:</span><span>Kafka · RabbitMQ · ActiveMQ</span></li>
@@ -33,7 +33,7 @@ const TechStack = () => {
 		</div>
 	  </div>
 	  <div className="tech_para">
-		<p className="tech_title">Front-end / Web Technologies</p>
+		<p className="tech_title">Front-end & Web Technologies</p>
 		<div className="tech_content">		
 			<ul>
 			  <li>React · JQuery · Javascript · Node.js · Html · CSS · Wordpress · Webflow · Dreamwear · Flash · Photoshop</li>
