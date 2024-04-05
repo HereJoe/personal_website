@@ -7,7 +7,7 @@ const About = () => {
     <div className="about">
 	  <div className="about_para">
 		<p className="about_title">About Me</p>
-		<p className="about_content">Hello, I'm Joe, a full-stack software engineer with over 7 years of experience. I've ontributed to major companies in China, including SF Express and Ping'An. Proficient in Java, and experienced with C, C++, and Python, my passion for technology fuels my expertise in JVM, storage, cache, proxy, messaging middleware, distributed systems, networking, as well as AI and Big Data. Currently pursuing a Master's degree in Computing and Innovation at the University of Adelaide, I aim to advance my career in software development post-graduation (Jun 2024). Actively seeking opportunities, I've garnered recommendations from my professors, acknowledging my exceptional academic performance.</p>
+		<p className="about_content">Hello, I'm Joe, a full-stack software engineer with over 7 years of experience. I've contributed to major companies in China, including SF Express and Ping'An. I am proficient in Java, and experienced with C, C++, and Python. My passion for technology fuels my expertise in JVM, storage, cache, proxy, messaging middleware, distributed systems, networking, as well as AI and Big Data. Currently I'm undertaking a Master's degree in Computing and Innovation at the University of Adelaide. I aim to advance my career in software development after graduating (Jun 2024). I am actively seeking opportunities and received recommendation letters from three mentors, acknowledging my outstanding academic performance.</p>
 	  </div>
 	  <div className="about_para">
 	    <p className="about_title">Experience & Education</p>

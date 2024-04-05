@@ -23,6 +23,37 @@ const PersonalPro = () => {
   return (
     <div className="pro">
 	  <div className="pro_para">
+		<div className="pro_img"><img src="images/website.png" alt="project image"/></div>
+		<div className="pro_info">
+			<p className="pro_title">Personal Website</p>
+			<div className="pro_desc">
+			  <p>
+			    A simple website to show my information and personal projects. All projects run on AWS, some of them will keep being updated.		
+			  </p>
+			  <p>
+			    <span className ="subtitle">Skills: </span>
+			    <span>AWS · React · Node.js · CSS · HTML</span>
+			  </p>
+		  </div>
+		  <div className="pro_links">
+			<ul>
+			  <li>
+				<a href="https://github.com/HereJoe/personal_website" target="_blank" rel="noopener noreferrer">
+				  <i className="fa-brands fa-lg fa-github"></i>
+				  GitHub
+				</a>
+			  </li>
+			  <li>
+				<a href="https://www.herejoe.tech" target="_blank" rel="noopener noreferrer">
+				  <i className="fa-sharp fa-solid fa-circle-play fa-lg"></i>
+				  Web Link
+				</a>
+			  </li>			  
+			</ul>
+		  </div>
+		</div>
+	  </div>
+	  <div className="pro_para">
 		<div className="pro_img"><img src="images/material_trans.png" alt="project image"/></div>
 		<div className="pro_info">
 			<p className="pro_title">Material Transportation</p>
@@ -44,13 +75,13 @@ const PersonalPro = () => {
 				</a>
 			  </li>
 			  <li>
-				<a href="http://47.106.108.49/shortestPath" target="_blank" rel="noopener noreferrer">
+				<a href="https://herejoe.tech/shortestPath" target="_blank" rel="noopener noreferrer">
 				  <i className="fa-sharp fa-solid fa-circle-play fa-lg"></i>
 				  run algorithm
 				</a>
 			  </li>
 			  <li>
-				<a href="http://47.106.108.49/shortestPath/swagger-ui.html" target="_blank" rel="noopener noreferrer">
+				<a href="https://herejoe.tech/shortestPath/swagger-ui.html" target="_blank" rel="noopener noreferrer">
 				  <i className="fa-sharp fa-solid fa-circle-play fa-lg"></i>
 				  Management Console
 				</a>
@@ -81,7 +112,7 @@ const PersonalPro = () => {
 				</a>
 			  </li>
 			  <li>
-				<a href="http://47.106.108.49/tic_tac_toe/" target="_blank" rel="noopener noreferrer">
+				<a href="https://herejoe.tech/ticTacToe/" target="_blank" rel="noopener noreferrer">
 				  <i className="fa-sharp fa-solid fa-circle-play fa-lg"></i>
 				  Tic Tac Toe
 				</a>
